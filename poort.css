@@ -1,0 +1,197 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+    color: #222;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    padding: 2% 1rem;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(101, 71, 255, 0.5);
+}
+
+header h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+main {
+    flex: 5;
+    max-width: 2000px;
+    margin: 2rem auto 4rem;
+    padding: 0 1rem;
+}
+
+
+.profile {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+    background: #ffffffcc;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 25px rgba(101, 71, 255, 0.15);
+}
+
+.profile .photo img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #6a11cb;
+    box-shadow: 0 8px 20px rgba(106, 17, 203, 0.6);
+    transition: transform 0.3s ease;
+}
+
+.profile .photo img:hover {
+    transform: scale(1.05) rotate(5deg);
+}
+
+.profile .bio h2 {
+    font-size: 2rem;
+    color: #6a11cb;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 0 8px rgba(106, 17, 203, 0.7);
+}
+
+.profile .bio p {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+
+.about {
+    background: #fff;
+    padding: 1.8rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(37, 117, 252, 0.15);
+    margin-bottom: 3rem;
+}
+
+.about h2 {
+    font-size: 2.4rem;
+    color: #2575fc;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 8px rgba(37, 117, 252, 0.6);
+}
+
+.about p {
+    font-size: 1.15rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+.contact {
+    background: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(37, 117, 252, 0.25);
+}
+
+.contact h2 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    color: #ff416c;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 12px rgba(255, 65, 108, 0.8);
+}
+
+.contact-info p {
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.contact-form {
+    margin-top: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.85rem 1.2rem;
+    border: 2px solid #ff4b2b;
+    border-radius: 10px;
+    font-size: 3rem;
+    font-family: inherit;
+    transition: all 0.4s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ff416c;
+    box-shadow: 0 0 8px #ff416c;
+    outline: none;
+    background: #fff0f4;
+}
+
+.contact-form button {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    padding: 1rem 1.8rem;
+    font-size: 5rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 6px 15px rgba(255, 65, 108, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(255, 65, 108, 0.8);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: #ddd;
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    box-shadow: 0 -4px 10px rgba(101, 71, 255, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile .photo img {
+        margin-bottom: 1rem;
+        width: 130px;
+        height: 130px;
+    }
+
+    main {
+        margin: 1rem auto 3rem;
+    }
+}
